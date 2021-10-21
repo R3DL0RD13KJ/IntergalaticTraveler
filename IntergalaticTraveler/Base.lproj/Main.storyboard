@@ -26,7 +26,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cPu-Y1-cYA" kind="show" identifier="mySegue1" id="LXG-Fb-500"/>
+                                    <segue destination="cPu-Y1-cYA" kind="show" identifier="mySegueBlue" id="LXG-Fb-500"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0v-RW-ZGc">
@@ -39,7 +39,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cPu-Y1-cYA" kind="show" identifier="mySegue2" id="Xp6-ze-L6i"/>
+                                    <segue destination="cPu-Y1-cYA" kind="show" identifier="mySegueRed" id="Xp6-ze-L6i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="73.660714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Cocco Controller View Controller-->
         <scene sceneID="UWA-8q-8Rf">
             <objects>
-                <viewController id="cPu-Y1-cYA" sceneMemberID="viewController">
+                <viewController id="cPu-Y1-cYA" customClass="CoccoControllerViewController" customModule="IntergalaticTraveler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZAH-Cm-oOV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,18 +64,14 @@
                                 <rect key="frame" x="107" y="378" width="200" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8t-AO-msh">
-                                <rect key="frame" x="20" y="216" width="374" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tNx-Z7-28q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Ij-sV-FwH"/>
+                    <connections>
+                        <outlet property="starViewCase" destination="SLp-21-c2V" id="4vm-W2-mGx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6i-To-RK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,14 +10,21 @@ import UIKit
 class CoccoControllerViewController: UIViewController {
 
     
+    @IBOutlet weak var starViewCase: UIImageView!
+    var starName = ""
     
     
-    override func viewDidLoad() {
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        starViewCase.image = UIImage(named: starName)
     }
     
 
+    
     /*
     // MARK: - Navigation
 
@@ -28,4 +35,8 @@ class CoccoControllerViewController: UIViewController {
     
     */
 
+
+    
+    
+    
 }
